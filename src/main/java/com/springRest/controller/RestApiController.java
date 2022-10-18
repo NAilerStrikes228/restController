@@ -69,14 +69,6 @@ public class RestApiController {
             return new ResponseEntity<>(new ExceptionInfo(error), HttpStatus.BAD_REQUEST);
         }
         String oldPassword = userService.getById(id).getPassword();
-        if (oldPassword.equals(user.getPassword())) {
-            System.out.println("TRUE");
-            user.setPassword(oldPassword);
-            userService.update(user);
-        } else {
-            System.out.println("FALSE");
-            userService.save(user);
-        }
         return new ResponseEntity<>(HttpStatus.OK);
     }
 

@@ -54,7 +54,6 @@ public class UserServiceImpl implements UserService {
         userDAO.save(passwordCoder(user));
     }
 
-    @Transactional
     @Override
     public void update(User user) {
         userDAO.save(user);
