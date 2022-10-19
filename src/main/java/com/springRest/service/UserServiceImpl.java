@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
-@Transactional
 @Service
 public class UserServiceImpl implements UserService {
 
