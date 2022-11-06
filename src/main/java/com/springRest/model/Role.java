@@ -45,3 +45,7 @@ public class Role implements GrantedAuthority {
         return getRole();
     }
 }
+
+
+
+//Facking slave
